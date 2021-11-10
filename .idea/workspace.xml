@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0170509c-5a7f-40bb-9a89-27173b1e6dea" name="Changes" comment="Add state to the main menu component" />
+    <list default="true" id="0170509c-5a7f-40bb-9a89-27173b1e6dea" name="Changes" comment="Implement a basic category page component acquisition simulation.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserLoginPage/UserLoginPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserLoginPage/UserLoginPage.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +22,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="20RyImszuBWbnFNw2x3bqSr52U1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -69,7 +82,10 @@
       <workItem from="1636050075473" duration="276000" />
       <workItem from="1636060797701" duration="46000" />
       <workItem from="1636370225329" duration="1008000" />
-      <workItem from="1636371367154" duration="4786000" />
+      <workItem from="1636371367154" duration="11228000" />
+      <workItem from="1636401631805" duration="1559000" />
+      <workItem from="1636462574414" duration="49000" />
+      <workItem from="1636538789916" duration="18669000" />
     </task>
     <task id="LOCAL-00001" summary="Install required libraries">
       <created>1636028961053</created>
