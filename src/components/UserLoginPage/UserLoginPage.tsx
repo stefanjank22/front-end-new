@@ -77,10 +77,7 @@ export class UserLoginPage extends React.Component{
 
                 //Preusmeriti korisnika.../#/
                 this.setLoginState(true);
-
             }
-
-
         })
     }
 
