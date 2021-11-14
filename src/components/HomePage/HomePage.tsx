@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Card, Col, Container, Row} from "react-bootstrap";
+import {Card, Col, Container, Row} from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faListAlt} from "@fortawesome/free-solid-svg-icons";
 import CategoryType from "../../types/CategoryType";
@@ -39,7 +39,7 @@ class HomePage extends React.Component{
     }
 
     private getCategories(){
-        api('/api/category', 'get', {})
+        api('/api/category/?filter=parentCategoryId||$isnull ', 'get', {})
             .then((res: ApiResponse) => {
                 if(res.status==="login"){
                     this.setLoginState(false);

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0170509c-5a7f-40bb-9a89-27173b1e6dea" name="Changes" comment="Implement the user registration component">
+    <list default="true" id="0170509c-5a7f-40bb-9a89-27173b1e6dea" name="Changes" comment="Load top level categories on the home page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CategoryPage/CategoryPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CategoryPage/CategoryPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/HomePage/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/HomePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/api.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/api.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/CategoryType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/CategoryType.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +87,10 @@
       <workItem from="1636401631805" duration="1559000" />
       <workItem from="1636462574414" duration="49000" />
       <workItem from="1636538789916" duration="19149000" />
-      <workItem from="1636632831556" duration="10608000" />
+      <workItem from="1636632831556" duration="10866000" />
+      <workItem from="1636799241631" duration="113000" />
+      <workItem from="1636801315135" duration="11477000" />
+      <workItem from="1636882280660" duration="3855000" />
     </task>
     <task id="LOCAL-00001" summary="Install required libraries">
       <created>1636028961053</created>
@@ -130,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636637682226</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Load top level categories on the home page">
+      <created>1636644889806</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1636644889806</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +166,7 @@
     <MESSAGE value="Add state to the main menu component" />
     <MESSAGE value="Fix the user token refresh mechanism" />
     <MESSAGE value="Implement the user registration component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement the user registration component" />
+    <MESSAGE value="Load top level categories on the home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Load top level categories on the home page" />
   </component>
 </project>
