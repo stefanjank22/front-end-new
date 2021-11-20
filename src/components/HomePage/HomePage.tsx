@@ -5,6 +5,7 @@ import {faListAlt} from "@fortawesome/free-solid-svg-icons";
 import CategoryType from "../../types/CategoryType";
 import {Redirect, Link} from "react-router-dom";
 import api, {ApiResponse} from "../../api/api";
+import RoleMeinMenu from "../RoleMainMenu/RoleMeinMenu";
 
 interface HomePageState{
     isUserLoggedIn: boolean;
@@ -81,6 +82,7 @@ class HomePage extends React.Component{
         }
         return (
             <Container>
+            <RoleMeinMenu role="user"/>
                 <Card>
                     <Card.Body>
                         <Card.Title>

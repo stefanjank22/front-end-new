@@ -2,25 +2,25 @@ import React from "react";
 import {Alert, Button, Card, Col, Container, Form} from "react-bootstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faSignInAlt} from "@fortawesome/free-solid-svg-icons";
-import api, {ApiResponse, saveRefreshToken, saveToken} from "../../api/api";
+import api, {ApiResponse, saveIdentity, saveRefreshToken, saveToken} from "../../api/api";
 import {Redirect} from "react-router-dom";
 import RoleMeinMenu from "../RoleMainMenu/RoleMeinMenu";
 
-interface UserLoginPageState{
-    email: string;
+interface AdministratorLoginPageState{
+    username: string;
     password: string;
     errorMessage: string;
     isLoggedIn: boolean;
 }
 
-export class UserLoginPage extends React.Component{
-    state: UserLoginPageState;
+export class AdministratorLoginPage extends React.Component{
+    state: AdministratorLoginPageState;
 
     constructor(props: Readonly<{}>) {
         super(props);
 
         this.state={
-            email: '',
+            username: '',
             password:'',
             errorMessage:'',
             isLoggedIn: false
@@ -52,8 +52,8 @@ export class UserLoginPage extends React.Component{
     }
 
     private doLogin(){
-        api('auth/user/login', 'post', {
-            email: this.state.email,
+        api('auth/administrator/login', 'post', {
+            username: this.state.username,
             password: this.state.password
         }).then((res: ApiResponse) => {
             if(res.status==='error'){
@@ -66,15 +66,16 @@ export class UserLoginPage extends React.Component{
                     let message='';
 
                     switch (res.data.statusCode){
-                        case -3001: message='Unknown e-mail!'; break;
+                        case -3001: message='Unknown username!'; break;
                         case -3002: message='Bad password!'; break;
                     }
                     this.setErrorMessage(message);
                     return;
                 }
 
-                saveToken('user', res.data.token);
-                saveRefreshToken('user', res.data.refreshToken);
+                saveToken('administrator', res.data.token);
+                saveRefreshToken('administrator', res.data.refreshToken);
+                saveIdentity('administrator', res.data.identity);
 
                 //Preusmeriti korisnika.../#/
                 this.setLoginState(true);
@@ -85,25 +86,24 @@ export class UserLoginPage extends React.Component{
     render() {
         if(this.state.isLoggedIn){//ako je true
             return (
-                <Redirect to={"/"}/>
+                <Redirect to={"/administrator/dashboard"}/>
             );
         }
         return (
             <Container>
-
-              <RoleMeinMenu role="visitor"/>
+                <RoleMeinMenu role="visitor"/>
 
                 <Col md={{span: 6, offset: 3}}>
                     <Card>
                         <Card.Body>
                             <Card.Title>
-                                <FontAwesomeIcon icon={faSignInAlt}/> User login
+                                <FontAwesomeIcon icon={faSignInAlt}/> Administrator login
                             </Card.Title>
                             <Form>
                                 <Form.Group>
-                                    <Form.Label htmlFor="email">E-mail:</Form.Label>
-                                    <Form.Control type="email" id="email"
-                                                  value={this.state.email} onChange={event=>this.formInputChanged(event as any)}/>
+                                    <Form.Label htmlFor="username">Username:</Form.Label>
+                                    <Form.Control type="text" id="username"
+                                                  value={this.state.username} onChange={event=>this.formInputChanged(event as any)}/>
                                 </Form.Group>
                                 <Form.Group>
                                     <Form.Label htmlFor="password">Password:</Form.Label>

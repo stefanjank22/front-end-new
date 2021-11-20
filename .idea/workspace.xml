@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0170509c-5a7f-40bb-9a89-27173b1e6dea" name="Changes" comment="Load top level categories on the home page">
+    <list default="true" id="0170509c-5a7f-40bb-9a89-27173b1e6dea" name="Changes" comment="Implement the basic article filter search">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CategoryPage/CategoryPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CategoryPage/CategoryPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContactPage/ContactPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactPage/ContactPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/HomePage/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/HomePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/api.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/api.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/CategoryType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/CategoryType.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainMenu/MainMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainMenu/MainMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserLoginPage/UserLoginPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserLoginPage/UserLoginPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserRegistrationPage/UserRegistrationPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserRegistrationPage/UserRegistrationPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -42,6 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
@@ -51,7 +56,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\stefa\Documents\Projekat\front-end\src\components" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\stefa\Documents\Projekat\front-end\src\components\OrderPage" />
       <recent name="C:\Users\stefa\Documents\Projekti\front-end\src\components\App" />
     </key>
   </component>
@@ -90,7 +99,10 @@
       <workItem from="1636632831556" duration="10866000" />
       <workItem from="1636799241631" duration="113000" />
       <workItem from="1636801315135" duration="11477000" />
-      <workItem from="1636882280660" duration="3855000" />
+      <workItem from="1636882280660" duration="11162000" />
+      <workItem from="1637173052333" duration="615000" />
+      <workItem from="1637313666121" duration="20708000" />
+      <workItem from="1637397464413" duration="8508000" />
     </task>
     <task id="LOCAL-00001" summary="Install required libraries">
       <created>1636028961053</created>
@@ -141,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636644889806</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Implement the basic article filter search">
+      <created>1636886349683</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1636886349683</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +186,7 @@
     <MESSAGE value="Fix the user token refresh mechanism" />
     <MESSAGE value="Implement the user registration component" />
     <MESSAGE value="Load top level categories on the home page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Load top level categories on the home page" />
+    <MESSAGE value="Implement the basic article filter search" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement the basic article filter search" />
   </component>
 </project>
