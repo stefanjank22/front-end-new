@@ -6,15 +6,11 @@ import CategoryType from "../../types/CategoryType";
 import {Redirect, Link} from "react-router-dom";
 import api, {ApiResponse} from "../../api/api";
 import RoleMeinMenu from "../RoleMainMenu/RoleMeinMenu";
+import ApiCategoryDto from "../../dtos/ApiCategoryDto";
 
 interface HomePageState{
     isUserLoggedIn: boolean;
     categories: CategoryType[];
-}
-
-interface ApiCategoryDto{
-    categoryId: number;
-    name: string
 }
 
 class HomePage extends React.Component{
@@ -34,10 +30,10 @@ class HomePage extends React.Component{
         this.getCategories();
     }
 
-    componentWillUpdate() {
+    /*componentWillUpdate() {
         this.getCategories();
 
-    }
+    }*///stavljam komentar da se ne bi beskonacno vrtelo
 
     private getCategories(){
         api('/api/category/?filter=parentCategoryId||$isnull ', 'get', {})

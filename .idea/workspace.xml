@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0170509c-5a7f-40bb-9a89-27173b1e6dea" name="Changes" comment="Implement the basic article filter search">
+    <list default="true" id="0170509c-5a7f-40bb-9a89-27173b1e6dea" name="Changes" comment="Implement dynamic menu and orders.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CategoryPage/CategoryPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CategoryPage/CategoryPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContactPage/ContactPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactPage/ContactPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AdministratorDashboard/AdministratorDashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AdministratorDashboard/AdministratorDashboardCategory.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/HomePage/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/HomePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainMenu/MainMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainMenu/MainMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UserLoginPage/UserLoginPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserLoginPage/UserLoginPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UserRegistrationPage/UserRegistrationPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserRegistrationPage/UserRegistrationPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/CategoryType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/CategoryType.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -103,6 +99,7 @@
       <workItem from="1637173052333" duration="615000" />
       <workItem from="1637313666121" duration="20708000" />
       <workItem from="1637397464413" duration="8508000" />
+      <workItem from="1637415616727" duration="7859000" />
     </task>
     <task id="LOCAL-00001" summary="Install required libraries">
       <created>1636028961053</created>
@@ -160,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636886349683</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Implement dynamic menu and orders.">
+      <created>1637415755427</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1637415755427</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +191,7 @@
     <MESSAGE value="Implement the user registration component" />
     <MESSAGE value="Load top level categories on the home page" />
     <MESSAGE value="Implement the basic article filter search" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement the basic article filter search" />
+    <MESSAGE value="Implement dynamic menu and orders." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement dynamic menu and orders." />
   </component>
 </project>

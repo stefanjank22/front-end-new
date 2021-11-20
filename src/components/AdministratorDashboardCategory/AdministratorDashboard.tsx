@@ -1,10 +1,11 @@
 import React from 'react';
-import {Card, Container, Row} from "react-bootstrap";
+import {Card, Container} from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faHome} from "@fortawesome/free-solid-svg-icons";
 import {Redirect} from "react-router-dom";
-import api, {ApiResponse, getIdentity} from "../../api/api";
+import api, {ApiResponse} from "../../api/api";
 import RoleMeinMenu from "../RoleMainMenu/RoleMeinMenu";
+import {Link} from "react-router-dom";
 
 interface AdministratorDashboardState{
     isAdministratorLoggedIn: boolean;
@@ -64,9 +65,11 @@ class AdministratorDashboard extends React.Component{
                         <Card.Title>
                             <FontAwesomeIcon icon={faHome}/> Administrator Dashboard
                         </Card.Title>
-                        <Row>
-                            ...
-                        </Row>
+                        <ul>
+                            <li><Link to="/administrator/dashboard/category">Categories</Link></li>
+                            <li><Link to="/administrator/dashboard/feature">Features</Link></li>
+                            <li><Link to="/administrator/dashboard/article">Articles</Link></li>
+                        </ul>
                     </Card.Body>
                 </Card>
             </Container>
