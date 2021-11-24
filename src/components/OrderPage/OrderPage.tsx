@@ -98,9 +98,9 @@ export default class OrderPage extends React.Component<any, any>{
     }
 
     private getOrders(){
-        api('/api/user/cart/orders','get',{})
+        api('/api/user/cart/orders/','get',{})
             .then((res:ApiResponse)=>{
-                if (res.status === 'login' || res.status==='error') {
+                if (res.status === 'login') {
                     return this.setLoginState(false)
                 }
 

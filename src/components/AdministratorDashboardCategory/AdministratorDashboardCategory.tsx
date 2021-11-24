@@ -1,8 +1,8 @@
 import React from 'react';
 import {Alert, Button, Card, Container, Form, Modal, Table} from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faEdit, faListAlt, faPlus} from "@fortawesome/free-solid-svg-icons";
-import {Redirect} from "react-router-dom";
+import {faEdit, faListAlt, faListUl, faPlus} from "@fortawesome/free-solid-svg-icons";
+import {Redirect, Link} from "react-router-dom";
 import api, {ApiResponse} from "../../api/api";
 import RoleMeinMenu from "../RoleMainMenu/RoleMeinMenu";
 import CategoryType from "../../types/CategoryType";
@@ -75,6 +75,22 @@ class AdministratorDashboardCategory extends React.Component{
             });
     }
 
+    private putCategoriesInState(data: ApiCategoryDto[]){
+        const categories: CategoryType[] = data.map(category=>{
+            return{
+                categoryId: category.categoryId,
+                name: category.name,
+                imagePath: category.imagePath,
+                parentCategoryId: category.parentCategoryId,
+            };
+        });
+
+        const newState= Object.assign(this.state,{
+            categories: categories
+        });
+        this.setState(newState);
+    }
+
     private setAddModalVisibleState(newState: boolean){
         this.setState(Object.assign(this.state,
             Object.assign(this.state.addModal,{
@@ -123,22 +139,6 @@ class AdministratorDashboardCategory extends React.Component{
         ));
     }
 
-    private putCategoriesInState(data: ApiCategoryDto[]){
-        const categories: CategoryType[] = data.map(category=>{
-            return{
-                categoryId: category.categoryId,
-                name: category.name,
-                imagePath: category.imagePath,
-                parentCategoryId: category.parentCategoryId,
-            };
-        });
-
-        const newState= Object.assign(this.state,{
-            categories: categories
-        });
-        this.setState(newState);
-    }
-
     private setLoginState(isLoggedIn: boolean){
         this.setState(Object.assign(this.state,{
             isAdministratorLoggedIn: isLoggedIn
@@ -165,7 +165,7 @@ class AdministratorDashboardCategory extends React.Component{
                         <Table hover size="sm" bordered>
                             <thead>
                             <tr>
-                                <th colSpan={3}></th>
+                                <th colSpan={3}/>
                                 <th className="text-center">
                                     <Button variant="primary" size="sm"
                                             onClick={()=> this.showAddModal()}>
@@ -177,7 +177,7 @@ class AdministratorDashboardCategory extends React.Component{
                                     <th>ID</th>
                                     <th>Name</th>
                                     <th>Parent ID</th>
-                                    <th></th>
+                                    <th/>
                                 </tr>
                             </thead>
                             <tbody>
@@ -187,7 +187,11 @@ class AdministratorDashboardCategory extends React.Component{
                                     <td>{category.name}</td>
                                     <td className="text-right">{category.parentCategoryId}</td>
                                     <td className="text-center">
-                                        <Button variant="info" size="sm"
+                                        <Link to={"/administrator/dashboard/feature/"+ category.categoryId}
+                                                className="btn btn-sm btn-info">
+                                            <FontAwesomeIcon icon={faListUl}/> Features
+                                        </Link>
+                                        <Button variant="info" size="sm" className="ms-2"
                                         onClick={()=> this.showEditModal(category)}>
                                             <FontAwesomeIcon icon={faEdit}/> Edit
                                         </Button>
