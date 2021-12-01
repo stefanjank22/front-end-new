@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0170509c-5a7f-40bb-9a89-27173b1e6dea" name="Changes" comment="Implement add and edit category">
+    <list default="true" id="0170509c-5a7f-40bb-9a89-27173b1e6dea" name="Changes" comment="Add all">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AdministratorDashboard/AdministratorDashboardCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AdministratorDashboardCategory/AdministratorDashboardCategory.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AdministratorDashboardCategory/AdministratorDashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AdministratorDashboard/AdministratorDashboard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/OrderPage/OrderPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OrderPage/OrderPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AdministratorDashboard/AdministratorDashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AdministratorDashboard/AdministratorDashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AdministratorDashboardArticle/AdministratorDashboardArticle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AdministratorDashboardArticle/AdministratorDashboardArticle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SingleArticlePreview/SingleArticlePreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SingleArticlePreview/SingleArticlePreview.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/ArticleType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/ArticleType.ts" afterDir="false" />
     </list>
@@ -49,7 +49,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="ts.external.directory.path" value="C:\Users\stefa\Documents\Projekat\front-end\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -105,6 +105,10 @@
       <workItem from="1637487210505" duration="11020000" />
       <workItem from="1637570451463" duration="8194000" />
       <workItem from="1637588412882" duration="2011000" />
+      <workItem from="1637760751900" duration="118000" />
+      <workItem from="1638005262512" duration="8515000" />
+      <workItem from="1638019106228" duration="15035000" />
+      <workItem from="1638202654611" duration="8566000" />
     </task>
     <task id="LOCAL-00001" summary="Install required libraries">
       <created>1636028961053</created>
@@ -183,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637487232391</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add all">
+      <created>1637760825334</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1637760825334</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +223,7 @@
     <MESSAGE value="Implement the basic article filter search" />
     <MESSAGE value="Implement dynamic menu and orders." />
     <MESSAGE value="Implement add and edit category" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement add and edit category" />
+    <MESSAGE value="Add all" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add all" />
   </component>
 </project>
